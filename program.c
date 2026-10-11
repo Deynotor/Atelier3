@@ -1,6 +1,17 @@
+
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
+
+int scoreJoueur = 0;
+int scoreOrdi = 0;
+ 
+// Déclarations
+void afficher_bilan();
+void afficher_choix(int choix);
+bool partie_en_cours(int manche, int scoreJ, int scoreO);
+int saisie_joueur();
+bool joueur1_gagne(int choix1, int choix2);
 
 int main()
 {
